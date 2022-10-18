@@ -1,0 +1,19 @@
+:root {
+  --primary-color-violet: #5964E0;
+  --primary-color-violet-light: #939BF4;
+  --primary-color-dark-blue: #19202D;
+  --primary-color-midnight: #121721;
+
+  --secondary-color-white: #ffffff;
+  --secondary-color-light-grey: #F4F6F8;
+  --secondary-color-gray: #9DAEC2;
+  --secondary-color-dark-gray: #6E8098;
+}
+
+body {
+  --background-color: var(--secondary-color-light-grey);
+}
+
+body.dark-theme {
+  --background-color: var(--primary-color-midnight);
+}
