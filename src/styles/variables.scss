@@ -1,6 +1,52 @@
+/*
+  To generate new color palettes visit http://mcg.mbitson.com/
+*/
+
+$theme-font: 'Roboto, Arial, sans-serif';
+
+$theme-primary-color: (
+    50 : #ebecfb,
+    100 : #cdd1f6,
+    200 : #acb2f0,
+    300 : #8b93e9,
+    400 : #727be5,
+    500 : #5964e0,
+    600 : #515cdc,
+    700 : #4852d8,
+    800 : #3e48d3,
+    900 : #2e36cb,
+    A100 : #ffffff,
+    A200 : #dadcff,
+    A400 : #a7acff,
+    A700 : #8e93ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
 :root {
-  --primary-color-violet: #5964E0;
-  --primary-color-violet-light: #939BF4;
+  --header-height: 160px;
+  --max-width: 1200px;
+
+  --primary-color-violet: #{map-get($theme-primary-color, 500)};
+  --primary-color-violet-contrast: #{map-get( map-get($theme-primary-color, contrast), 500 )};
+
+  --primary-color-violet-light: #{map-get($theme-primary-color, 300)};
+  --primary-color-violet-light: #{map-get( map-get($theme-primary-color, contrast), 300 )};
+
   --primary-color-dark-blue: #19202D;
   --primary-color-midnight: #121721;
 
